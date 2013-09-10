@@ -119,7 +119,18 @@ namespace MegaProject_StringReverse
             Finished.Append(" milliseconds.");
             return Finished.ToString();
         }
-
+        
+        private static string ReverseStringMathodD(string forwardInput)
+        {
+            StringBuilder methodD = new StringBuilder();
+            for (int i = forwardInput.Length - 1; i >= 0; i--)
+            {
+                methodD.Append(forwardInput[i]);
+            }
+            return methodD.ToString();
+        }
+        
+        
         private static string ReverseStringMethodA(string Forwardinput)
         {
             StringBuilder Methoda = new StringBuilder();
@@ -133,7 +144,8 @@ namespace MegaProject_StringReverse
 
             return Methoda.ToString();
         }
-
+        
+        
         private static string ReverseStringMethodB(string Forwardinput)
         {
             int inputlen = Forwardinput.Length;
